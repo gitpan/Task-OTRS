@@ -1,0 +1,10 @@
+Changes
+LICENSE
+MANIFEST
+META.json
+META.yml
+Makefile.PL
+README
+dist.ini
+lib/Task/OTRS.pm
+t/00-compile.t
