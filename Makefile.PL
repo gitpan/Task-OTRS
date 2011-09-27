@@ -39,9 +39,10 @@ my %WriteMakefileArgs = (
     "PDF::API2" => "0.73",
     "SOAP::Lite" => "0.713",
     "Text::CSV_XS" => 0,
+    "XML::Parser" => 0,
     "version" => 0
   },
-  "VERSION" => "1.00",
+  "VERSION" => "1.01",
   "test" => {
     "TESTS" => "t/*.t"
   }

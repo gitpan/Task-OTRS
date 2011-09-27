@@ -15,7 +15,7 @@ Task::OTRS - Almost all of the modules required for installing OTRS Help Desk.
 
 =head1 VERSION
 
-version 1.00
+version 1.01
 
 =head1 SYNOPSIS
 
@@ -96,6 +96,8 @@ your system, we will not install it again.
 
 =item * Text::CSV_XS
 
+=item * XML::Parser
+
 =item * version
 
 =back
@@ -118,7 +120,7 @@ Michiel Beijen <michiel.beijen@gmail.com>
 
 =head1 COPYRIGHT AND LICENSE
 
-This software is Copyright (c) 2011 by OTRS B.V..
+This software is Copyright (c) 2011 by OTRS BV.
 
 This is free software, licensed under:
 
