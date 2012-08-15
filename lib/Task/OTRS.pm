@@ -15,7 +15,7 @@ Task::OTRS - Almost all of the modules required for installing OTRS Help Desk.
 
 =head1 VERSION
 
-version 1.01
+version 1.02
 
 =head1 SYNOPSIS
 
@@ -56,6 +56,10 @@ your system, we will not install it again.
 
 =over 4
 
+=item * Authen::NTLM
+
+=item * Authen::SASL
+
 =item * Class::Inspector
 
 =item * Compress::Zlib
@@ -79,6 +83,8 @@ your system, we will not install it again.
 =item * IO::Socket::SSL
 
 =item * JSON::XS
+
+=item * Mail::IMAPClient
 
 =item * MIME::Base64
 
@@ -120,7 +126,7 @@ Michiel Beijen <michiel.beijen@gmail.com>
 
 =head1 COPYRIGHT AND LICENSE
 
-This software is Copyright (c) 2011 by OTRS BV.
+This software is Copyright (c) 2012 by OTRS BV.
 
 This is free software, licensed under:
 
