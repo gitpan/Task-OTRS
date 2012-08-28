@@ -1,12 +1,15 @@
 use strict;
 use warnings;
 package Task::OTRS;
+
+our $VERSION = '1.03';
 # ABSTRACT: Almost all of the modules required for installing OTRS Help Desk.
 
 
 1;
 
 __END__
+
 =pod
 
 =head1 NAME
@@ -15,7 +18,7 @@ Task::OTRS - Almost all of the modules required for installing OTRS Help Desk.
 
 =head1 VERSION
 
-version 1.02
+version 1.03
 
 =head1 SYNOPSIS
 
@@ -133,4 +136,3 @@ This is free software, licensed under:
   The GNU Affero General Public License, Version 3, November 2007
 
 =cut
-

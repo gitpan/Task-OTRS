@@ -41,5 +41,6 @@ requires:
   version: 0
 resources:
   bugtracker: https://github.com/mwb/Task-OTRS/issues
-  repository: git://github.com/mwb/Task-OTRS.git
-version: 1.02
+  homepage: https://github.com/mwb/Task-OTRS
+  repository: https://github.com/mwb/Task-OTRS.git
+version: 1.03

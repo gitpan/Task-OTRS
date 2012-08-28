@@ -55,12 +55,13 @@
       "bugtracker" : {
          "web" : "https://github.com/mwb/Task-OTRS/issues"
       },
+      "homepage" : "https://github.com/mwb/Task-OTRS",
       "repository" : {
          "type" : "git",
-         "url" : "git://github.com/mwb/Task-OTRS.git",
+         "url" : "https://github.com/mwb/Task-OTRS.git",
          "web" : "https://github.com/mwb/Task-OTRS"
       }
    },
-   "version" : "1.02"
+   "version" : "1.03"
 }
 
