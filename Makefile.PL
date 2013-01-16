@@ -44,9 +44,10 @@ my %WriteMakefileArgs = (
     "SOAP::Lite" => "0.713",
     "Text::CSV_XS" => 0,
     "XML::Parser" => 0,
+    "YAML::XS" => 0,
     "version" => 0
   },
-  "VERSION" => "1.03",
+  "VERSION" => "1.04",
   "test" => {
     "TESTS" => "t/*.t"
   }
