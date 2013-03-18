@@ -2,7 +2,7 @@ use strict;
 use warnings;
 package Task::OTRS;
 
-our $VERSION = '1.05';
+our $VERSION = '1.06';
 # ABSTRACT: Almost all of the modules required for installing OTRS Help Desk.
 
 
@@ -18,7 +18,7 @@ Task::OTRS - Almost all of the modules required for installing OTRS Help Desk.
 
 =head1 VERSION
 
-version 1.05
+version 1.06
 
 =head1 SYNOPSIS
 
@@ -61,19 +61,13 @@ your system, we will not install it again.
 
 =item * Authen::NTLM
 
-=item * Authen::SASL
-
 =item * Class::Inspector
 
 =item * Compress::Zlib
 
-=item * Crypt::PasswdMD5
-
 =item * Date::Format
 
 =item * DBI
-
-=item * Digest::MD5
 
 =item * Encode::HanExtra
 
@@ -89,15 +83,9 @@ your system, we will not install it again.
 
 =item * Mail::IMAPClient
 
-=item * MIME::Base64
-
 =item * Net::DNS
 
 =item * Net::LDAP
-
-=item * Net::POP3
-
-=item * Net::SMTP
 
 =item * PDF::API2
 
@@ -131,7 +119,7 @@ Michiel Beijen <michiel.beijen@gmail.com>
 
 =head1 COPYRIGHT AND LICENSE
 
-This software is Copyright (c) 2012 by OTRS BV.
+This software is Copyright (c) 2013 by OTRS BV.
 
 This is free software, licensed under:
 
