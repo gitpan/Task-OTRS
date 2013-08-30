@@ -22,6 +22,7 @@ my %WriteMakefileArgs = (
   "PREREQ_PM" => {
     "Authen::NTLM" => 0,
     "Compress::Zlib" => 0,
+    "Crypt::Eksblowfish::Bcrypt" => 0,
     "DBI" => 0,
     "Date::Format" => 0,
     "Digest::HMAC_MD5" => 0,
@@ -41,12 +42,30 @@ my %WriteMakefileArgs = (
     "YAML::XS" => 0,
     "version" => 0
   },
-  "VERSION" => "1.06",
+  "TEST_REQUIRES" => {
+    "IO::Handle" => 0,
+    "IPC::Open3" => 0,
+    "Test::More" => 0
+  },
+  "VERSION" => "1.07",
   "test" => {
     "TESTS" => "t/*.t"
   }
 );
 
+
+unless ( eval { ExtUtils::MakeMaker->VERSION(6.63_03) } ) {
+  my $tr = delete $WriteMakefileArgs{TEST_REQUIRES};
+  my $br = $WriteMakefileArgs{BUILD_REQUIRES};
+  for my $mod ( keys %$tr ) {
+    if ( exists $br->{$mod} ) {
+      $br->{$mod} = $tr->{$mod} if $tr->{$mod} > $br->{$mod};
+    }
+    else {
+      $br->{$mod} = $tr->{$mod};
+    }
+  }
+}
 
 unless ( eval { ExtUtils::MakeMaker->VERSION(6.56) } ) {
   my $br = delete $WriteMakefileArgs{BUILD_REQUIRES};

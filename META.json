@@ -4,7 +4,7 @@
       "Michiel Beijen <michiel.beijen@gmail.com>"
    ],
    "dynamic_config" : 0,
-   "generated_by" : "Dist::Zilla version 4.300030, CPAN::Meta::Converter version 2.120921",
+   "generated_by" : "Dist::Zilla version 4.300037, CPAN::Meta::Converter version 2.130880",
    "license" : [
       "agpl_3"
    ],
@@ -23,6 +23,7 @@
          "requires" : {
             "Authen::NTLM" : "0",
             "Compress::Zlib" : "0",
+            "Crypt::Eksblowfish::Bcrypt" : "0",
             "DBI" : "0",
             "Date::Format" : "0",
             "Digest::HMAC_MD5" : "0",
@@ -43,6 +44,13 @@
             "perl" : "v5.8.6",
             "version" : "0"
          }
+      },
+      "test" : {
+         "requires" : {
+            "IO::Handle" : "0",
+            "IPC::Open3" : "0",
+            "Test::More" : "0"
+         }
       }
    },
    "release_status" : "stable",
@@ -53,6 +61,6 @@
          "web" : "https://github.com/mbeijen/Task-OTRS"
       }
    },
-   "version" : "1.06"
+   "version" : "1.07"
 }
 
