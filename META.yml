@@ -3,13 +3,14 @@ abstract: 'Almost all of the modules required for installing OTRS Help Desk.'
 author:
   - 'Michiel Beijen <michiel.beijen@gmail.com>'
 build_requires:
+  File::Spec: 0
   IO::Handle: 0
   IPC::Open3: 0
   Test::More: 0
 configure_requires:
   ExtUtils::MakeMaker: 6.30
 dynamic_config: 0
-generated_by: 'Dist::Zilla version 4.300037, CPAN::Meta::Converter version 2.130880'
+generated_by: 'Dist::Zilla version 4.300039, CPAN::Meta::Converter version 2.132140'
 license: open_source
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
@@ -40,4 +41,4 @@ requires:
   version: 0
 resources:
   repository: git://github.com/mbeijen/Task-OTRS.git
-version: 1.07
+version: 1.08
